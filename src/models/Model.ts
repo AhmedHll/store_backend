@@ -71,6 +71,7 @@ class Model {
     }
 
     //'Update' Stand For 'U' in CRUD Operations , 'this is not required in the project'.
+    // I use type 'any' because it's dynamic model it can take any deferent type.
     async updateOne(id: string, u: any): Promise<MainModel> {
         try {
             const connection = await db.connect();
